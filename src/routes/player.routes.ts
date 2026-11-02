@@ -1,8 +1,11 @@
 import { Router } from "express";
 import {
+  buyHero,
   createPlayer,
   deletePlayer,
   getPlayerById,
+  matchResult,
+  topUp,
   updatePlayer,
 } from "../controllers/playerController";
 
@@ -12,5 +15,8 @@ router.post("/", createPlayer);
 router.get("/:player_id", getPlayerById);
 router.patch("/:player_id", updatePlayer);
 router.delete("/:player_id", deletePlayer);
+router.post("/:player_id/topup", topUp);
+router.post("/:player_id/matches", matchResult);
+router.post("/:player_id/heroes", buyHero);
 
 export default router;
