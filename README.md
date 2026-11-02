@@ -23,7 +23,7 @@ Backend MLBB Shop. REST API berbasis Express+TypeScript untuk simulasi sistem to
 
 ```
 
-2. Buat file `.env` di root direktori dan masukkan connection string database Neon (Pooled dan Direct)
+2. file `.env` di root direktori dimasukkan ke connection string database Neon (Pooled dan Direct)
 
 3. Generate Prisma client dan sinkronkan skema database:
 ```bash
