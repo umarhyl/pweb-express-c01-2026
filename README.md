@@ -62,5 +62,3 @@ npx tsx prisma/seed.ts
 
 Seluruh 28 testcase telah diuji sesuai skenario modul:
 [Lihat Folder Asset](asset)
-
-```
