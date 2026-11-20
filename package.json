@@ -1,7 +1,7 @@
 {
   "name": "pweb-express-c01-2026",
   "version": "1.0.0",
-  "description": "MLBB Shop Backend - Express 5 + Prisma 7 + Neon",
+  "description": "Backend Modul 4 MLBB Shop dan REST API Post untuk Challenge Modul 5",
   "type": "module",
   "main": "src/index.ts",
   "scripts": {
