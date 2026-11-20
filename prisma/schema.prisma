@@ -79,3 +79,12 @@ model PlayerHero {
 
   @@unique([playerId, heroId])
 }
+
+model Post {
+  id        Int      @id @default(autoincrement())
+  title     String
+  content   String?
+  author    String   @default("Kelompok C01")
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}

@@ -61,3 +61,8 @@ export type Player = Prisma.PlayerModel
  * 
  */
 export type PlayerHero = Prisma.PlayerHeroModel
+/**
+ * Model Post
+ * 
+ */
+export type Post = Prisma.PostModel

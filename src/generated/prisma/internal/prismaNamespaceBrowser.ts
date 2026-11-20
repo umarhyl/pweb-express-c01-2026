@@ -54,7 +54,8 @@ export const ModelName = {
   Hero: 'Hero',
   Skin: 'Skin',
   Player: 'Player',
-  PlayerHero: 'PlayerHero'
+  PlayerHero: 'PlayerHero',
+  Post: 'Post'
 } as const
 
 export type ModelName = (typeof ModelName)[keyof typeof ModelName]
@@ -117,6 +118,18 @@ export const PlayerHeroScalarFieldEnum = {
 } as const
 
 export type PlayerHeroScalarFieldEnum = (typeof PlayerHeroScalarFieldEnum)[keyof typeof PlayerHeroScalarFieldEnum]
+
+
+export const PostScalarFieldEnum = {
+  id: 'id',
+  title: 'title',
+  content: 'content',
+  author: 'author',
+  createdAt: 'createdAt',
+  updatedAt: 'updatedAt'
+} as const
+
+export type PostScalarFieldEnum = (typeof PostScalarFieldEnum)[keyof typeof PostScalarFieldEnum]
 
 
 export const SortOrder = {

@@ -1,4 +1,5 @@
 import "dotenv/config";
+import cors from "cors";
 import express from "express";
 import prisma from "./config/prisma";
 import { errorHandler, notFound } from "./middlewares/error";
@@ -10,6 +11,12 @@ const app = express();
 app.use(logger);
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
+
+app.use(
+  cors({
+    origin: ["http://localhost:5173", "http://127.0.0.1:5173"],
+  }),
+);
 
 app.get("/health", async (_req, res) => {
   await prisma.$queryRaw`SELECT 1`;
